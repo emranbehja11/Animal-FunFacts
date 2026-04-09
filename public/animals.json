@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Octopus",
+    "fact": "An octopus has three hearts, and two of them stop beating when it swims.",
+    "image": "/images/octopus.jpg",
+    "emoji": "\ud83d\udc19",
+    "quizClue": "This ocean expert has three hearts, and two of them pause when it swims."
+  },
+  {
+    "name": "Wombat",
+    "fact": "Wombats are known for producing cube-shaped poop.",
+    "image": "/images/wombat.jpg",
+    "emoji": "\ud83d\udc3e",
+    "quizClue": "This burrow-loving buddy is famous for making cube-shaped poop."
+  },
+  {
+    "name": "Axolotl",
+    "fact": "Axolotls can regrow limbs, parts of their heart, and even sections of their brain.",
+    "image": "/images/axolotl.jpg",
+    "emoji": "\ud83c\udf38",
+    "quizClue": "This watery wonder can regrow limbs, heart tissue, and even parts of its brain."
+  },
+  {
+    "name": "Cheetah",
+    "fact": "A cheetah can go from 0 to around 60 miles per hour in just a few seconds.",
+    "image": "/images/cheetah.jpg",
+    "emoji": "\ud83d\udc06",
+    "quizClue": "This spotted sprinter can blast from 0 to around 60 miles per hour in seconds."
+  },
+  {
+    "name": "Honeybee",
+    "fact": "Honeybees communicate with each other by performing a waggle dance.",
+    "image": "/images/honeybee.jpg",
+    "emoji": "\ud83d\udc1d",
+    "quizClue": "This tiny flyer shares directions with a wiggly waggle dance."
+  },
+  {
+    "name": "Penguin",
+    "fact": "Emperor penguin dads balance their eggs on their feet to keep them warm in the icy cold.",
+    "image": "/images/penguin.jpg",
+    "emoji": "\ud83d\udc27",
+    "quizClue": "This chilly dad balances an egg on its feet to keep it warm."
+  },
+  {
+    "name": "Dolphin",
+    "fact": "Dolphins use special whistles almost like names to call to each other.",
+    "image": "/images/dolphin.jpg",
+    "emoji": "\ud83d\udc2c",
+    "quizClue": "This smart swimmer uses signature whistles almost like names."
+  },
+  {
+    "name": "Koala",
+    "fact": "Koalas can snooze for most of the day because eucalyptus leaves do not give them much energy.",
+    "image": "/images/Koala.webp",
+    "emoji": "\ud83d\udc28",
+    "quizClue": "This sleepy tree climber rests most of the day because eucalyptus leaves give it very little energy."
+  },
+  {
+    "name": "Owl",
+    "fact": "Some owls can turn their heads 270 degrees to look around without moving their bodies.",
+    "image": "/images/owl.jpg",
+    "emoji": "\ud83e\udd89",
+    "quizClue": "This night flyer can turn its head about 270 degrees."
+  },
+  {
+    "name": "Elephant",
+    "fact": "Elephants can use their trunks to smell, drink, trumpet, and even give gentle hugs.",
+    "image": "/images/Elephant.webp",
+    "emoji": "\ud83d\udc18",
+    "quizClue": "This gentle giant uses its trunk to smell, drink, trumpet, and even give hugs."
+  },
+  {
+    "name": "Rabbit",
+    "fact": "A happy rabbit may jump and twist in the air in a move called a binky.",
+    "image": "/images/rabbit.jpg",
+    "emoji": "\ud83d\udc30",
+    "quizClue": "This bouncy friend does a twisty happy jump called a binky."
+  },
+  {
+    "name": "Giraffe",
+    "fact": "A giraffe's tongue can be about 20 inches long and helps it grab tasty leaves from tall trees.",
+    "image": "/images/Giraffe.jpg",
+    "emoji": "\ud83e\udd92",
+    "quizClue": "This towering leaf lover can use a tongue about 20 inches long to grab leaves."
+  }
+]

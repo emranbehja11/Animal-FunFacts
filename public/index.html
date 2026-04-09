@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Fun Facts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="playground">
+        <section class="hero">
+            <p class="hero-kicker">Tiny explorers welcome</p>
+            <h1>Animal Fun Facts</h1>
+            <p class="hero-text">Meet silly, speedy, sleepy, splashy animal friends and discover a new surprise with every tap.</p>
+        </section>
+
+        <section class="card-wrap">
+            <div class="top-tags">
+                <p class="tag" id="animal-count">12 fun facts, 5 real-photo friends</p>
+                <p class="tag tag-alt">Tap the button for a surprise</p>
+            </div>
+
+            <p id="status" aria-live="polite"></p>
+
+            <div id="animal-card">
+                <div class="photo-stage">
+                    <div id="animal-placeholder" class="animal-placeholder" hidden>
+                        <div id="animal-emoji" class="placeholder-emoji">&#x1F43E;</div>
+                        <p id="animal-placeholder-text" class="placeholder-text">Photo friend coming soon</p>
+                    </div>
+                    <img id="animal-image" src="" alt="Animal" style="display: none;">
+                </div>
+
+                <div class="fact-bubble">
+                    <p class="fact-label">Did you know?</p>
+                    <h2 id="animal-name"></h2>
+                    <p id="animal-fact"></p>
+                </div>
+
+                <button id="next-btn">Show Me Another Animal!</button>
+
+                <section class="quiz-panel" aria-labelledby="quiz-title">
+                    <div class="quiz-head">
+                        <div>
+                            <p class="quiz-kicker">Pop Quiz</p>
+                            <h3 id="quiz-title" class="quiz-title">Animal Memory Game</h3>
+                        </div>
+                        <p id="quiz-score" class="quiz-score">Quiz score 0/0</p>
+                    </div>
+
+                    <p id="quiz-question" class="quiz-question">Quiz is getting the first round ready.</p>
+                    <p id="quiz-fact" class="quiz-fact">Pick the animal that matches the clue.</p>
+                    <div id="quiz-options" class="quiz-options"></div>
+                    <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+
+                    <div class="quiz-actions">
+                        <button id="new-quiz-btn" class="quiz-refresh" type="button">New Clue</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

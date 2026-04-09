@@ -1,0 +1,515 @@
+:root {
+    --sky: #c7efff;
+    --sunny: #ffe58f;
+    --peach: #ffb183;
+    --berry: #ff6b8a;
+    --mint: #8ce3c0;
+    --ink: #31425b;
+    --cream: #fffdf6;
+    --card-shadow: 0 24px 60px rgba(58, 82, 119, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+    color: var(--ink);
+    background:
+        radial-gradient(circle at top left, rgba(255, 241, 161, 0.9), transparent 35%),
+        radial-gradient(circle at 85% 18%, rgba(255, 182, 193, 0.75), transparent 28%),
+        radial-gradient(circle at 15% 85%, rgba(140, 227, 192, 0.7), transparent 25%),
+        linear-gradient(180deg, #bde8ff 0%, #ffe4b7 100%);
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    border-radius: 999px;
+    z-index: 0;
+    opacity: 0.45;
+    filter: blur(4px);
+    animation: floaty 10s ease-in-out infinite;
+}
+
+body::before {
+    width: 220px;
+    height: 220px;
+    top: 7%;
+    left: -50px;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+body::after {
+    width: 280px;
+    height: 280px;
+    right: -70px;
+    bottom: 8%;
+    background: rgba(255, 255, 255, 0.35);
+    animation-delay: -4s;
+}
+
+.playground {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 960px);
+    margin: 0 auto;
+    padding: 48px 18px 64px;
+    display: grid;
+    gap: 24px;
+    animation: rise-in 0.7s ease-out;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px 10px 0;
+}
+
+.hero-kicker {
+    display: inline-block;
+    margin: 0 0 12px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #d4557c;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    box-shadow: 0 10px 25px rgba(255, 107, 138, 0.12);
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: 0.95;
+    color: #ff5c7c;
+    text-shadow: 0 4px 0 rgba(255, 255, 255, 0.65);
+}
+
+.hero-text {
+    width: min(620px, 100%);
+    margin: 16px auto 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.card-wrap {
+    width: min(100%, 760px);
+    margin: 0 auto;
+}
+
+.top-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.tag {
+    margin: 0;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.76);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.95rem;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(49, 66, 91, 0.08);
+}
+
+.tag-alt {
+    background: rgba(255, 245, 212, 0.9);
+    color: #ac5f00;
+}
+
+#status {
+    min-height: 28px;
+    margin: 0 0 12px;
+    text-align: center;
+    color: #815c1d;
+    font-weight: 700;
+}
+
+#animal-card {
+    display: grid;
+    gap: 20px;
+    padding: 24px;
+    background: rgba(255, 253, 246, 0.92);
+    border: 4px solid rgba(255, 255, 255, 0.78);
+    border-radius: 34px;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(8px);
+}
+
+.photo-stage {
+    position: relative;
+    min-height: 290px;
+    display: grid;
+    place-items: center;
+    padding: 18px;
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.95), transparent 40%),
+        linear-gradient(180deg, #fff0ba 0%, #ffd4d7 100%);
+    overflow: hidden;
+}
+
+.photo-stage::before,
+.photo-stage::after {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    opacity: 0.35;
+}
+
+.photo-stage::before {
+    top: 20px;
+    left: 20px;
+    background: #ffffff;
+}
+
+.photo-stage::after {
+    right: 24px;
+    bottom: 18px;
+    background: #fff7d6;
+}
+
+#animal-card img {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 320px);
+    aspect-ratio: 1 / 1;
+    border-radius: 28px;
+    box-shadow: 0 16px 30px rgba(49, 66, 91, 0.16);
+}
+
+#animal-card img {
+    object-fit: cover;
+    border: 8px solid #ffffff;
+    animation: bounce-in 0.45s ease;
+}
+
+.animal-placeholder {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    gap: 8px;
+    text-align: center;
+    width: min(56%, 170px);
+    min-height: 132px;
+    padding: 14px 12px;
+    border-radius: 20px;
+    border: 4px dashed rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 22px rgba(49, 66, 91, 0.14);
+    background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.9), transparent 38%),
+        linear-gradient(180deg, #8ee8d0 0%, #77c8ff 100%);
+}
+
+.placeholder-emoji {
+    font-size: clamp(1.15rem, 3vw, 1.6rem);
+    line-height: 1;
+}
+
+.placeholder-text {
+    margin: 0;
+    max-width: 130px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.fact-bubble {
+    position: relative;
+    padding: 22px 22px 20px;
+    border-radius: 26px;
+    background: #ffffff;
+    box-shadow: 0 12px 26px rgba(49, 66, 91, 0.08);
+}
+
+.fact-bubble::after {
+    content: "";
+    position: absolute;
+    left: 34px;
+    bottom: -14px;
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    box-shadow: 8px 8px 18px rgba(49, 66, 91, 0.04);
+}
+
+.fact-label {
+    margin: 0 0 8px;
+    color: var(--berry);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+#animal-name {
+    margin: 0 0 10px;
+    font-size: clamp(1.9rem, 5vw, 2.5rem);
+    color: #ff7a45;
+}
+
+#animal-fact {
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.quiz-panel {
+    display: grid;
+    gap: 14px;
+    padding: 20px;
+    border-radius: 26px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.88), transparent 38%),
+        linear-gradient(180deg, #f8f1ff 0%, #def8ff 100%);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 14px 30px rgba(49, 66, 91, 0.1);
+}
+
+.quiz-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+.quiz-kicker {
+    margin: 0 0 6px;
+    color: #6d60d8;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.quiz-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #324968;
+}
+
+.quiz-score {
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.88);
+    color: #4f5d75;
+    font-weight: 800;
+}
+
+.quiz-question,
+.quiz-fact,
+.quiz-feedback {
+    margin: 0;
+}
+
+.quiz-question,
+.quiz-feedback {
+    font-weight: 800;
+}
+
+.quiz-question {
+    color: #3d4f6b;
+}
+
+.quiz-fact {
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.quiz-options {
+    display: grid;
+    gap: 10px;
+}
+
+.quiz-option,
+.quiz-refresh {
+    min-width: 0;
+    padding: 12px 16px;
+    border-radius: 18px;
+}
+
+.quiz-option {
+    justify-self: stretch;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #fff7f1 100%);
+    color: var(--ink);
+    box-shadow: 0 10px 18px rgba(49, 66, 91, 0.08);
+}
+
+.quiz-option.is-correct {
+    background: linear-gradient(180deg, #73d8a7 0%, #49c98a 100%);
+    color: #ffffff;
+    box-shadow: 0 14px 22px rgba(73, 201, 138, 0.24);
+}
+
+.quiz-option.is-wrong {
+    background: linear-gradient(180deg, #ff9ea7 0%, #ff7386 100%);
+    color: #ffffff;
+    box-shadow: 0 14px 22px rgba(255, 115, 134, 0.24);
+}
+
+.quiz-option:disabled {
+    opacity: 1;
+    cursor: default;
+}
+
+.quiz-option.is-correct:disabled {
+    box-shadow: 0 14px 22px rgba(73, 201, 138, 0.24);
+}
+
+.quiz-option.is-wrong:disabled {
+    box-shadow: 0 14px 22px rgba(255, 115, 134, 0.24);
+}
+
+.quiz-feedback {
+    min-height: 24px;
+    color: #815c1d;
+}
+
+.quiz-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.quiz-refresh {
+    width: auto;
+    background: linear-gradient(180deg, #78d8ff 0%, #48b9ff 100%);
+    color: #ffffff;
+    box-shadow: 0 14px 24px rgba(72, 185, 255, 0.24);
+}
+
+button {
+    justify-self: center;
+    min-width: min(100%, 320px);
+    border: none;
+    border-radius: 999px;
+    padding: 16px 24px;
+    background: linear-gradient(180deg, #ff7c91 0%, #ff5b75 100%);
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 16px 24px rgba(255, 91, 117, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 18px 28px rgba(255, 91, 117, 0.35);
+    filter: saturate(1.05);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+@keyframes floaty {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-16px);
+    }
+}
+
+@keyframes rise-in {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 640px) {
+    .playground {
+        padding: 28px 14px 40px;
+    }
+
+    #animal-card {
+        padding: 18px;
+        border-radius: 28px;
+    }
+
+    .photo-stage {
+        min-height: 240px;
+        padding: 14px;
+    }
+
+    .fact-bubble {
+        padding: 18px 18px 16px;
+    }
+
+    .fact-bubble::after {
+        left: 28px;
+    }
+
+    .quiz-panel {
+        padding: 18px;
+    }
+
+    .quiz-actions {
+        display: block;
+    }
+
+    .quiz-refresh {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        min-width: 0;
+    }
+}

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: funfacts
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/animals
+    envVars:
+      - key: MONGO_URI
+        sync: false

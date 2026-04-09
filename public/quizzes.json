@@ -1,0 +1,170 @@
+[
+  {
+    "key": "octopus-hearts",
+    "animalName": "Octopus",
+    "prompt": "Which animal matches this clue?",
+    "clue": "This ocean expert has three hearts, and two of them pause when it swims.",
+    "answerName": "Octopus",
+    "options": [
+      { "name": "Octopus", "emoji": "\ud83d\udc19" },
+      { "name": "Dolphin", "emoji": "\ud83d\udc2c" },
+      { "name": "Penguin", "emoji": "\ud83d\udc27" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "wombat-cubes",
+    "animalName": "Wombat",
+    "prompt": "Who does this clue belong to?",
+    "clue": "This burrow-loving buddy is famous for making cube-shaped poop.",
+    "answerName": "Wombat",
+    "options": [
+      { "name": "Wombat", "emoji": "\ud83d\udc3e" },
+      { "name": "Rabbit", "emoji": "\ud83d\udc30" },
+      { "name": "Koala", "emoji": "\ud83d\udc28" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "axolotl-regrow",
+    "animalName": "Axolotl",
+    "prompt": "Tap the animal behind this clue.",
+    "clue": "This watery wonder can regrow limbs, heart tissue, and even parts of its brain.",
+    "answerName": "Axolotl",
+    "options": [
+      { "name": "Axolotl", "emoji": "\ud83c\udf38" },
+      { "name": "Dolphin", "emoji": "\ud83d\udc2c" },
+      { "name": "Honeybee", "emoji": "\ud83d\udc1d" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "cheetah-speed",
+    "animalName": "Cheetah",
+    "prompt": "Which animal matches this clue?",
+    "clue": "This spotted sprinter can blast from 0 to around 60 miles per hour in seconds.",
+    "answerName": "Cheetah",
+    "options": [
+      { "name": "Cheetah", "emoji": "\ud83d\udc06" },
+      { "name": "Giraffe", "emoji": "\ud83e\udd92" },
+      { "name": "Elephant", "emoji": "\ud83d\udc18" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "honeybee-dance",
+    "animalName": "Honeybee",
+    "prompt": "Pop quiz: who does this clue belong to?",
+    "clue": "This tiny flyer shares directions with a wiggly waggle dance.",
+    "answerName": "Honeybee",
+    "options": [
+      { "name": "Honeybee", "emoji": "\ud83d\udc1d" },
+      { "name": "Owl", "emoji": "\ud83e\udd89" },
+      { "name": "Penguin", "emoji": "\ud83d\udc27" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "penguin-egg",
+    "animalName": "Penguin",
+    "prompt": "Which animal matches this clue?",
+    "clue": "This chilly dad balances an egg on its feet to keep it warm.",
+    "answerName": "Penguin",
+    "options": [
+      { "name": "Penguin", "emoji": "\ud83d\udc27" },
+      { "name": "Owl", "emoji": "\ud83e\udd89" },
+      { "name": "Koala", "emoji": "\ud83d\udc28" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "dolphin-whistles",
+    "animalName": "Dolphin",
+    "prompt": "Tap the animal behind this clue.",
+    "clue": "This smart swimmer uses signature whistles almost like names.",
+    "answerName": "Dolphin",
+    "options": [
+      { "name": "Dolphin", "emoji": "\ud83d\udc2c" },
+      { "name": "Octopus", "emoji": "\ud83d\udc19" },
+      { "name": "Axolotl", "emoji": "\ud83c\udf38" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "koala-sleepy",
+    "animalName": "Koala",
+    "prompt": "Who does this clue belong to?",
+    "clue": "This sleepy tree climber rests most of the day because eucalyptus leaves give it very little energy.",
+    "answerName": "Koala",
+    "options": [
+      { "name": "Koala", "emoji": "\ud83d\udc28" },
+      { "name": "Wombat", "emoji": "\ud83d\udc3e" },
+      { "name": "Rabbit", "emoji": "\ud83d\udc30" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "owl-turn",
+    "animalName": "Owl",
+    "prompt": "Which animal matches this clue?",
+    "clue": "This night flyer can turn its head about 270 degrees.",
+    "answerName": "Owl",
+    "options": [
+      { "name": "Owl", "emoji": "\ud83e\udd89" },
+      { "name": "Penguin", "emoji": "\ud83d\udc27" },
+      { "name": "Honeybee", "emoji": "\ud83d\udc1d" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "elephant-trunk",
+    "animalName": "Elephant",
+    "prompt": "Tap the animal behind this clue.",
+    "clue": "This gentle giant uses its trunk to smell, drink, trumpet, and even give hugs.",
+    "answerName": "Elephant",
+    "options": [
+      { "name": "Elephant", "emoji": "\ud83d\udc18" },
+      { "name": "Giraffe", "emoji": "\ud83e\udd92" },
+      { "name": "Cheetah", "emoji": "\ud83d\udc06" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "rabbit-binky",
+    "animalName": "Rabbit",
+    "prompt": "Who does this clue belong to?",
+    "clue": "This bouncy friend does a twisty happy jump called a binky.",
+    "answerName": "Rabbit",
+    "options": [
+      { "name": "Rabbit", "emoji": "\ud83d\udc30" },
+      { "name": "Wombat", "emoji": "\ud83d\udc3e" },
+      { "name": "Koala", "emoji": "\ud83d\udc28" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  },
+  {
+    "key": "giraffe-tongue",
+    "animalName": "Giraffe",
+    "prompt": "Which animal matches this clue?",
+    "clue": "This towering leaf lover can use a tongue about 20 inches long to grab leaves.",
+    "answerName": "Giraffe",
+    "options": [
+      { "name": "Giraffe", "emoji": "\ud83e\udd92" },
+      { "name": "Elephant", "emoji": "\ud83d\udc18" },
+      { "name": "Cheetah", "emoji": "\ud83d\udc06" }
+    ],
+    "questionType": "multiple-choice",
+    "isActive": true
+  }
+]
